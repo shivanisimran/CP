@@ -19,7 +19,8 @@ ll fn(ll row, ll p){
      if(row==n-1){
         if(p==0)  return dp[row][p] = max(a[row][1], a[row][2]);
         else if(p==1) return dp[row][p] = max(a[row][0], a[row][2]);
-        else  return dp[row][p] = max(a[row][1], a[row][0]);
+        else if(p==2) return dp[row][p] = max(a[row][0], a[row][1]);
+        else  return dp[row][p] = max({a[row][1], a[row][0],a[row][2]});
      }
  
      if(row==0){
