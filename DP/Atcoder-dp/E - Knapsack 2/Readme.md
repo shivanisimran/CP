@@ -12,4 +12,4 @@ DP [i][j] = w
 
 This means that w is the minimum weight with which we can get total value j using first i items.
 
-To find the maximum value for a given weight W, you would iterate over DP [n][j] and take the maximum j for which DP [n][j] is less than W.
+To find the maximum value for a given weight W, we would iterate over DP [n][j] and take the maximum j for which DP [n][j] is less than W.
