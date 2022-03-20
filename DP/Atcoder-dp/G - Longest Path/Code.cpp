@@ -11,8 +11,9 @@ using namespace std;
 //void precision(int n){cout<<fixed<<setprecision(n);}
 vector<int> adj[100005];
 int n,m;
-int dist[100005],dp[100005];
+int dp[100005];
 
+//dp[i] indicates the length of the longest path starting at 'i' .
 int dfs(int x){
    if(dp[x]!=-1)  return dp[x];
     if(adj[x].size()==0)  return dp[x]=0;
